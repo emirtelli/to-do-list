@@ -1,0 +1,47 @@
+.container {
+    position: relative;
+}
+
+.todoapp {
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top: 200px;
+    transform: translate(-50%,-100px);
+}
+
+.complated {
+    text-decoration: line-through;
+}
+
+.pending {
+    text-decoration: none;
+}
+.filters span {
+    cursor: pointer;
+}
+
+.filters span.active {
+    color: rgb(0, 38, 255);
+    text-decoration:underline;
+}
+
+@media (max-width:560px) {
+    
+    .todoapp {
+        position: absolute;
+        width: 93%;
+        left: 50%;
+        top: 100px;
+        transform: translate(-50%,-100px);
+    }
+    .btn-sm {
+        font-size: 13px;
+    }
+    .filters span {
+        font-size: 15px;
+    }
+    .card {
+        width: 100%;
+    }    
+}
